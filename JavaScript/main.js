@@ -1,0 +1,38 @@
+document.addEventListener("click",event=>
+{
+    if(event.target.closest(".card"))
+    {
+        more_info(event.target.closest(".card"));
+    }
+    if(event.target.classList.contains("full-card__quite"))
+    {
+        go_back();
+    }
+    if(event.target.closest(".display-mode"))
+    {
+        display_mode();
+    }
+});
+document.querySelector(".detailed-page").
+addEventListener("click",e=>
+{
+    if(e.target.classList.contains("full-card__btn"))
+    {
+        const country = all_coutnries.find(country=>
+        {
+            return country.alpha3Code === e.target.dataset.alpha3code;
+        });
+        fill(country);
+    }
+});
+document.addEventListener("DOMContentLoaded",
+initial_req);
+document.querySelector(".search").
+addEventListener("change",search_by_name);
+document.querySelector(".filter").
+addEventListener("change",filter);
+document.querySelector("form").addEventListener
+("submit",(e)=>
+{
+    e.preventDefault();
+})

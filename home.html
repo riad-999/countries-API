@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-COmpatible" content="IE=edge" />
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+        <script src="https://kit.fontawesome.com/1ef1b3e9cf.js" defer crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/main-page.css" />
+        <link rel="stylesheet" href="./css/card.css" />
+        <script src="./JavaScript/declarations.js" defer></script>
+        <script src="./JavaScript/main.js" defer></script>
+        <title>where</title>
+    </head>
+    <body>
+        <header class="home-header">
+            <h2>
+                where in the world?
+            </h2>
+            <section class="display-mode">
+                <button class="btn">
+                    <i class="far fa-moon"></i>
+                    Dark Mode
+                </button>
+            </section>
+        </header>
+        <section class="detailed-page under">
+        <section class="display-mode">
+            <button class="btn">
+                <i class="far fa-moon"></i>
+                Dark Mode
+            </button>
+        </section>
+        </section>
+        <main class="home-page">
+            <form class="search-filter" autocomplete="off">
+                <input type="search" class="search" 
+                name="search" placeholder="search for country..." />
+                <select class="filter">
+                    <option disabled selected>filter by region</option>
+                    <option value="af">africa</option>
+                    <option value="am">Americas</option>
+                    <option value="as">Asia</option>
+                    <option value="eu">Europe</option>
+                    <option value="oc">oceania</option>
+                    <option value="all">all</option>
+                    <div class="fas fa-chevron-down"></div>
+                </select>
+            </form>
+            <section class="countries-container">
+                <!-- content will be added dynamecly -->
+            </section>
+        </main>
+    </body>
+</html>

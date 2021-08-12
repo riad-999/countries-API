@@ -1,0 +1,55 @@
+:root
+{
+    --dark-mode-elements: hsl(209, 23%, 22%);
+    --dark-mode-background: hsl(207, 26%, 17%);
+    --light-mode-text: hsl(200, 15%, 8%);
+    --light-mode-input: hsl(0, 0%, 52%);
+    --light-mode-background: hsl(0, 0%, 98%);
+    --Dark-mode-text-light-mode-elements: hsl(0, 0%, 100%);
+    --font-size-DP:16px;
+    --font-size-HP:14px;
+
+    font-size:var(--font-size-HP);
+}
+body
+{
+    font-family: 'Nunito Sans', sans-serif;
+    color:var(--light-mode-text);
+    background-color: var(--light-mode-background);
+    font-weight: 300;
+}
+.dark-mode body
+{
+    color:
+    var(--Dark-mode-text-light-mode-elements);
+    background-color: 
+    var(--dark-mode-background);
+}
+*,
+*::after,
+*::before
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+button
+{
+    background-color: inherit;
+    border:none;
+    cursor: pointer;
+}
+input
+{
+    border:none;
+}
+h3
+{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin:2rem 0;
+}
+ul
+{
+    list-style-type: none;
+}

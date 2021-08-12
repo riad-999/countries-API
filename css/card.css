@@ -1,0 +1,25 @@
+.card
+{
+    background-color: 
+    var(--Dark-mode-text-light-mode-elements);
+    padding-bottom: 4rem;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.dark-mode .card
+{
+    background-color:
+    var(--dark-mode-elements);
+}
+.card__img
+{
+    width:100%;
+}
+.card__info
+{
+    color:var(--light-mode-input);
+}
+.card__info-wraper
+{
+    padding:0 2rem 0;
+}
