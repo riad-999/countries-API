@@ -50,7 +50,7 @@ function display_card(country)
 }
 async function initial_req()
 {
-    const url = "https://restcountries.eu/rest/v2/all";
+    const url = "https://restcountries.com/v2/all";
     const response = await fetch(url);
     const json_data = await response.json();
     current_data = json_data;
